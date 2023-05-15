@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Index";
+       
+
+<h1>TP 04 - Index</h1>
+<h1> <a href='@Url.Action("SelectPaquete")'>Ingresar a formulario</a></h1>
+
+foreach (var id in ViewBag.Paquetes)
+{
+    <div class = home>
+        <h2>@id:</h2>
+        <div class ="imagen-container"><img src="~/img/Hoteles/@ViewBag.hotel"><p>Hoteles</p></div>
+        <div class ="imagen-container"><img src="~/img/Aereos/@ViewBag.aereo"><p>Aereos</p></div>
+        <div class ="imagen-container"><img src="~/img/Excursiones/@ViewBag.excursion"><p>Excursiones</p></div>
+    </div>
+}
+
+
+}

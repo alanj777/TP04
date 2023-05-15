@@ -1,0 +1,27 @@
+<form action = "Index.cshtml/GuardarPaquete"method = "post" >
+
+<p> Hoteles: 
+    <select name="Hotel" >
+
+        <option>@ViewBag.hotel</option>
+    </select>
+<img src="@ViewBag.hotel" alt="">
+
+</p>
+<p> Aerolíneas: 
+    <select name="Aereo" >
+
+        <option>@ViewBag.aereo</option>
+    </select>
+<img src="@ViewBag.aereo" alt="">
+
+</p>
+<p> Excursiones: 
+    <select name="Excursiones" >
+
+        <option>@ViewBag.excursion</option>
+    </select>
+<img src="@ViewBag.excursion" alt="">
+</p>
+<p> <input type="sumbit" value="Crear Paquete"></p>
+</form>
