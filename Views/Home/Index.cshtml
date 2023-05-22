@@ -5,13 +5,13 @@
 <h1>TP 04 - Index</h1>
 <h1> <a href='@Url.Action("SelectPaquete")'>Ingresar a formulario</a></h1>
 
-foreach (string Destino in ViewBag.Paquetes.Keys)
+foreach (string Destino in ViewBag.Dictionary.Keys)
 {
     <div class = home>
         <h2>@Destino:</h2>
-        <div class ="imagen-container"><img src="~/TPBase/TP04/wwwroot/img/Hoteles/@ViewBag.Paquetes[Destino].hotel"><p>Hoteles</p></div>
-        <div class ="imagen-container"><img src="~/TPBase/TP04/wwwroot/img/Aereos/@ViewBag.Paquetes[Destino].aereo"><p>Aereos</p></div>
-        <div class ="imagen-container"><img src="~/TPBase/TP04/wwwroot/img/Excursiones/@ViewBag.Paquetes[Destino].excursion"><p>Excursiones</p></div>
+        <div class ="imagen-container"><img src="~/TPBase/TP04/wwwroot/img/Hoteles/@ViewBag.Dictionary.hotel"><p>Hoteles</p></div>
+        <div class ="imagen-container"><img src="~/TPBase/TP04/wwwroot/img/Aereos/@ViewBag.Dictionary.aereo"><p>Aereos</p></div>
+        <div class ="imagen-container"><img src="~/TPBase/TP04/wwwroot/img/Excursiones/@ViewBag.Dictionary.excursion"><p>Excursiones</p></div>
     </div>
 }
 
