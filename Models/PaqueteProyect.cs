@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace PaqueteProyect.Models
-{
- public class Paquete{
+
+ class Paquete{
     public string Hotel {get; private set;}
     public string Aereo {get; private set;}
     public string Excursion {get; private set;}
@@ -17,4 +16,3 @@ namespace PaqueteProyect.Models
 
     }
  }
-}
